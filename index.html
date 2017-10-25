@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My TodoList</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <form action="javascript:void(0)" onsubmit="submitForm()">
+                <center><h2>My TodoList</h2></center>
+                <input type="text" id="title" placeholder="Enter new Todo title" class="form-control" required>
+                <button type="submit" id="addTodo" class="btn btn-success">+ Add New Todo</button>
+            </form>
+        </div>
+    </div>
+    <div id="items" class="panel-body"></div>
+</div>
+<script src="index.js" ></script>
+<script src="LocalDatabase.js" ></script>
+</body>
+</html>
